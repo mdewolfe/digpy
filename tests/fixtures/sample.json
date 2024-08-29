@@ -1,0 +1,397 @@
+[
+  {
+    "sha": "37f4cd2648faa2a4c78c3d4caf5d61cb491c7d22",
+    "node_id": "C_kwDOAE3WVdoAKDM3ZjRjZDI2NDhmYWEyYTRjNzhjM2Q0Y2FmNWQ2MWNiNDkxYzdkMjI",
+    "commit": {
+      "author": {
+        "name": "Chris LaRose",
+        "email": "cjlarose@gmail.com",
+        "date": "2024-08-27T01:59:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2024-08-27T01:59:43Z"
+      },
+      "message": "Fix docs for `strptime(fmt)` (#3164)",
+      "tree": {
+        "sha": "fba6c0996cd40abd7b48569397837adf60afa445",
+        "url": "https://api.github.com/repos/jqlang/jq/git/trees/fba6c0996cd40abd7b48569397837adf60afa445"
+      },
+      "url": "https://api.github.com/repos/jqlang/jq/git/commits/37f4cd2648faa2a4c78c3d4caf5d61cb491c7d22",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmzTMPCRC1aQ7uu5UhlAAA46QQAFPNJPmy2CVh6zpqQor8cjb/\nfnlWCUibg2/Srba+Fbe4PyuRTGG0c3yPE+T75SIBLkxeZCn8tsite/D7YFGoQlMk\n2bhU2WexlG/iRn05xIUVgacmmod6xJb0ryQa4scvCF9c1fgLJr89dDKaChCKMmmr\nWkMpEKxhzXFENh0h+CBS3Q/POc/w4yFgl3gDrfvT5YXO030F9v3PHwO7ipGqhL4z\nUOFYj34+1c1t1WWFrtQPiHXGPrxIoy4x86Iix77z5HaraowygtVXc7zsCf9HY08V\nqsmpIMlesbtpS06QJn3j2SNi6NsQHRNBWvdhuhRVeS7iS3H4zfcXHWfl06YB4+L1\nMizjRo+hDitfRYxXT5wEfRnM2mSVup7vlkPvCHgw/aE1mpVSpc4+Cop2vpr6ol7G\nKK8jSgkbOPLGQgN1xVyrnU0mZ55YxRdPiWsRu87YuhYJVybHttqAsibKjUr1Oym5\nPLei3PH8RmWxNo3mm1x9ZhwcAkfB2Wy1ER5gqcX35UidUEDDgUN9kY7ymeiFvt25\ndlBzST/PToNvvgcVOzRDhAF0ufZPIqgovAjHLQAbG533UaUnW//DUShJCbO1Q8dn\naYRlWaH0xEZlYbtJzBDQcSvOzyiiXVSWSmEnLGPnm/siZ+TG5TaToUCsBnN7k5vN\nqQ6WzlPmvgiISiVcu176\n=Vdk6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree fba6c0996cd40abd7b48569397837adf60afa445\nparent 6322b992528498632d620f29c6153be443dca6da\nauthor Chris LaRose <cjlarose@gmail.com> 1724723983 -0700\ncommitter GitHub <noreply@github.com> 1724723983 +0900\n\nFix docs for `strptime(fmt)` (#3164)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/commits/37f4cd2648faa2a4c78c3d4caf5d61cb491c7d22",
+    "html_url": "https://github.com/jqlang/jq/commit/37f4cd2648faa2a4c78c3d4caf5d61cb491c7d22",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/commits/37f4cd2648faa2a4c78c3d4caf5d61cb491c7d22/comments",
+    "author": {
+      "login": "cjlarose",
+      "id": 954763,
+      "node_id": "MDQ6VXNlcjk1NDc2Mw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/954763?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cjlarose",
+      "html_url": "https://github.com/cjlarose",
+      "followers_url": "https://api.github.com/users/cjlarose/followers",
+      "following_url": "https://api.github.com/users/cjlarose/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cjlarose/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cjlarose/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cjlarose/subscriptions",
+      "organizations_url": "https://api.github.com/users/cjlarose/orgs",
+      "repos_url": "https://api.github.com/users/cjlarose/repos",
+      "events_url": "https://api.github.com/users/cjlarose/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cjlarose/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6322b992528498632d620f29c6153be443dca6da",
+        "url": "https://api.github.com/repos/jqlang/jq/commits/6322b992528498632d620f29c6153be443dca6da",
+        "html_url": "https://github.com/jqlang/jq/commit/6322b992528498632d620f29c6153be443dca6da"
+      }
+    ]
+  },
+  {
+    "sha": "6322b992528498632d620f29c6153be443dca6da",
+    "node_id": "C_kwDOAE3WVdoAKDYzMjJiOTkyNTI4NDk4NjMyZDYyMGYyOWM2MTUzYmU0NDNkY2E2ZGE",
+    "commit": {
+      "author": {
+        "name": "Kirk McKelvey",
+        "email": "kirkoman@gmail.com",
+        "date": "2024-08-23T23:44:08Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2024-08-23T23:44:08Z"
+      },
+      "message": "fix: find and source ~/.jq file on windows (fixes #3104) (#3114)",
+      "tree": {
+        "sha": "987848b986701eefb2dbc79c19247660c15eec1a",
+        "url": "https://api.github.com/repos/jqlang/jq/git/trees/987848b986701eefb2dbc79c19247660c15eec1a"
+      },
+      "url": "https://api.github.com/repos/jqlang/jq/git/commits/6322b992528498632d620f29c6153be443dca6da",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmyR7ICRC1aQ7uu5UhlAAAgLUQABR6Tp8JfQRiKsbG+IAsu8sd\nPShJIAvu1ZT87hGX1L34rd5hvqaWBHiom569+L/3N5g/D652OwzjW6zYDjT6w8l5\n5CpxLIGsO2OhHAFjUoj4eeSJoVvYdXBPMPrPGSdWpHQe27SdVRyLfrQITpVFlvxz\n7IuRaf0axYZxr2akxb8DvRkmwnk51QbC82CHmJJyzh9oMJ6m2t9NqhfeeNF9qIpa\nfJtMcczSGC5IC2QSScuUt2mfA/6wLA7f6Xk/ziumgt599NCU2cjFI2LV9WWVxIX2\nRh6rSUkPwcdPHPSnCU1B0lhxYvHJZ2dzxxNu5M6mLm11khIyWMSkDfhNjpQzO0+C\nhL8s8w1UWvzHaBxdRDgWrg5nxDTMzpbTjnK+BZXP+q/Vupj+lxH2i3hUWrRUsoB9\ndC0TomUK1Pk1n8B2hJ/Q0CaHSjGwIm1Vj6Dutt6jLlI1+NQb+e4kHbmLVG4azl4l\n1knBdGVYpKSRdv4P3xiqM04LgYLRxFKz5OURFTfkdWkiziQ6X0Z+amq0nw/e6f1P\nBKDyn0RCJhvsw6RHhItmxR+h++y2F9QSSFmth9p038Y2OQ3QxmatY5z79RZLJxp1\nCS92+Bx53qwDvc2Jjq47ScsDQizpsSCdofEEkMmO82KW5t1VxqtKcnBtkQMQXcGa\nsVyCIPgyiuxiyYXnovhx\n=72tz\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 987848b986701eefb2dbc79c19247660c15eec1a\nparent da2a0b970c005844baa44ac50c0e820c98cd59ac\nauthor Kirk McKelvey <kirkoman@gmail.com> 1724456648 -0400\ncommitter GitHub <noreply@github.com> 1724456648 +0900\n\nfix: find and source ~/.jq file on windows (fixes #3104) (#3114)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/commits/6322b992528498632d620f29c6153be443dca6da",
+    "html_url": "https://github.com/jqlang/jq/commit/6322b992528498632d620f29c6153be443dca6da",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/commits/6322b992528498632d620f29c6153be443dca6da/comments",
+    "author": {
+      "login": "kirkoman",
+      "id": 1413323,
+      "node_id": "MDQ6VXNlcjE0MTMzMjM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1413323?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kirkoman",
+      "html_url": "https://github.com/kirkoman",
+      "followers_url": "https://api.github.com/users/kirkoman/followers",
+      "following_url": "https://api.github.com/users/kirkoman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kirkoman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kirkoman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kirkoman/subscriptions",
+      "organizations_url": "https://api.github.com/users/kirkoman/orgs",
+      "repos_url": "https://api.github.com/users/kirkoman/repos",
+      "events_url": "https://api.github.com/users/kirkoman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kirkoman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "da2a0b970c005844baa44ac50c0e820c98cd59ac",
+        "url": "https://api.github.com/repos/jqlang/jq/commits/da2a0b970c005844baa44ac50c0e820c98cd59ac",
+        "html_url": "https://github.com/jqlang/jq/commit/da2a0b970c005844baa44ac50c0e820c98cd59ac"
+      }
+    ]
+  },
+  {
+    "sha": "da2a0b970c005844baa44ac50c0e820c98cd59ac",
+    "node_id": "C_kwDOAE3WVdoAKGRhMmEwYjk3MGMwMDU4NDRiYWE0NGFjNTBjMGU4MjBjOThjZDU5YWM",
+    "commit": {
+      "author": {
+        "name": "Emanuele Torre",
+        "email": "torreemanuele6@gmail.com",
+        "date": "2024-08-21T23:17:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2024-08-21T23:17:54Z"
+      },
+      "message": "mktime/0: remove unnecessary  length>=6  input requirement (#3162)\n\nThis check was redundant and useless since jv2tm() used to require 8\r\nelements, and errored anyway if not enough elements were provided.\r\nAfter commit bc96146, this check also prevents mktime/0 from accepting\r\nnow supported inputs with less than 8 elements.\r\n\r\nRef: https://github.com/jqlang/jq/pull/3070#issuecomment-2299902072\r\n\r\nReported-by: itchyny <itchyny@cybozu.co.jp>",
+      "tree": {
+        "sha": "f5493b553b80a1bd66766ab4f2f3e918bc636821",
+        "url": "https://api.github.com/repos/jqlang/jq/git/trees/f5493b553b80a1bd66766ab4f2f3e918bc636821"
+      },
+      "url": "https://api.github.com/repos/jqlang/jq/git/commits/da2a0b970c005844baa44ac50c0e820c98cd59ac",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmxnWiCRC1aQ7uu5UhlAAArmoQAG9pjTiP5J/fQeB7LKdM+zLR\nuDEFA6Ve9H8q1ZnJPV6qqU1oelnl8dmMt9kkF1tj0RHJvqEDKvYo8sL694gZRt07\n+66nxOVRijMy7HaCoIwgBI1mpNDNl7ezGiEB+PqD3MDgIMHw2ucaiezp9LI/k9Zr\nPWmS5Jrs6bSn0R8Fj0zETvz56zxDZdgqS1Se/czCf06ZDg3EkOaF0BjrHCaCakgS\nU8GWY2mbGsHOvw0Nbo8f9s/qlfCn6BwT761y4Z9GM5BtqgflVyV8+GpKkKFmdSwf\nYeDyhmN6Aq3c9pp6Pr/1ga0LyGlEhzVIppRuO6nWKnKDxvMpkMOZfhHamJ58VjQh\n7RIe/g0Zd+rQPMO915VXlRBHum1/iSJZpvSdO3UfBEFImq68mAeS2dQUDmcSfVhU\nnm2uYcoa8IORzDdR4NgkR7zumHsng7pNJaQfdiiZ4fA4X4Ztbz9xx5025mwchqx6\nEzhccSicCu8IJro4Ng3rrotx+zZxFUUTeK9LparolWIm/vlvpcDczy00w8ZsoZUR\n5oijrDv2TzQzVPPcJZNXEfo1Qa7A/P/HU5bDlu1NLJUsZsNhSSjsH5uKm2z/EAvl\nuT4HDIkiUZqK5Q8f/rSL87kwtFtgwAorsI332f5qnH7pXFmocD0IS18c8GDHco43\nQpz+bgUr7Rg+/x8kbAV/\n=74jU\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree f5493b553b80a1bd66766ab4f2f3e918bc636821\nparent 0e0cdd552e79b6dfc8eab8d58f39c54e044510e9\nauthor Emanuele Torre <torreemanuele6@gmail.com> 1724282274 +0200\ncommitter GitHub <noreply@github.com> 1724282274 +0900\n\nmktime/0: remove unnecessary  length>=6  input requirement (#3162)\n\nThis check was redundant and useless since jv2tm() used to require 8\r\nelements, and errored anyway if not enough elements were provided.\r\nAfter commit bc96146, this check also prevents mktime/0 from accepting\r\nnow supported inputs with less than 8 elements.\r\n\r\nRef: https://github.com/jqlang/jq/pull/3070#issuecomment-2299902072\r\n\r\nReported-by: itchyny <itchyny@cybozu.co.jp>"
+      }
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/commits/da2a0b970c005844baa44ac50c0e820c98cd59ac",
+    "html_url": "https://github.com/jqlang/jq/commit/da2a0b970c005844baa44ac50c0e820c98cd59ac",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/commits/da2a0b970c005844baa44ac50c0e820c98cd59ac/comments",
+    "author": {
+      "login": "emanuele6",
+      "id": 20175435,
+      "node_id": "MDQ6VXNlcjIwMTc1NDM1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20175435?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emanuele6",
+      "html_url": "https://github.com/emanuele6",
+      "followers_url": "https://api.github.com/users/emanuele6/followers",
+      "following_url": "https://api.github.com/users/emanuele6/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emanuele6/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emanuele6/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emanuele6/subscriptions",
+      "organizations_url": "https://api.github.com/users/emanuele6/orgs",
+      "repos_url": "https://api.github.com/users/emanuele6/repos",
+      "events_url": "https://api.github.com/users/emanuele6/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emanuele6/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+        "url": "https://api.github.com/repos/jqlang/jq/commits/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+        "html_url": "https://github.com/jqlang/jq/commit/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9"
+      }
+    ]
+  },
+  {
+    "sha": "0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+    "node_id": "C_kwDOAE3WVdoAKDBlMGNkZDU1MmU3OWI2ZGZjOGVhYjhkNThmMzljNTRlMDQ0NTEwZTk",
+    "commit": {
+      "author": {
+        "name": "fletcher gornick",
+        "email": "fletcher@gornick.dev",
+        "date": "2024-08-21T23:07:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2024-08-21T23:07:24Z"
+      },
+      "message": "feat: uri decode function (#3161)",
+      "tree": {
+        "sha": "354ee1b1f9dc1254ba19aaf077a2e20e6e20a113",
+        "url": "https://api.github.com/repos/jqlang/jq/git/trees/354ee1b1f9dc1254ba19aaf077a2e20e6e20a113"
+      },
+      "url": "https://api.github.com/repos/jqlang/jq/git/commits/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmxnMsCRC1aQ7uu5UhlAAAQ9QQACd7ldxVEiWB39av4FguuqD3\nKbexVkuzVwmpZsofsUGiGHKFCvdg6pGOXb+YLKLcD5cLkRyoWXeG8eytgciOJtnQ\nANPZ2etGHVZf4gIA9+jsj7HI16oqI9bHFHeXYrLdDnTZHnqn+r/TP9prJIV5izyg\nRzE7qpmmcbwEwPOl95F+mMJ8GcByVhHYeDX/H+j06F2X4iQlSFmFm01mMwUNvqvD\nPQRHqebPhmOkUyE0/sYo4Hd3GZ9u6yzg4yGDGoPYSPBacoAVZBylXBezetSBxrbe\naRji7q5qTRCs7+hDHrqQ8W1r6RS5W9TYA3rJTOLUkRAKXn5OI7GLlIipcdm5KKnk\n4wNpJzVEydkrDVv7F60gT9jHg8GdbEk4Xk9Kg2U2gVtdGpQrYFShacjP1fSHn6qF\ntbD+R34/w0PSQ7HmdA80b/PgTJsPpFdc5uY9lBidfhXrDtMazZhkL9Yw57WKbEo+\nGhBqjMcdWo/hpQpUjTXmsngOKUHdGqnEwxqiwDhy7+Lwk+Tp4/1l8VVd6FQHAh8C\n9zQoAX72IASWwMvyDxBnEPca+3O40vovfuld6wW3Sxvz2o2BZqcWo3SHMHCvHLt+\nn38HOxreitkgCj6AOXtOEx4rM2PfZlQmwS94m4AcqN90uQZ8pNVqRanzs5c83D34\nv0FexO2oq+0rTmCBsMY8\n=x8mQ\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 354ee1b1f9dc1254ba19aaf077a2e20e6e20a113\nparent 0b5ae30f19d71ca6cc7b5867f3c988c570ecd579\nauthor fletcher gornick <fletcher@gornick.dev> 1724281644 -0500\ncommitter GitHub <noreply@github.com> 1724281644 +0900\n\nfeat: uri decode function (#3161)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/commits/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+    "html_url": "https://github.com/jqlang/jq/commit/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/commits/0e0cdd552e79b6dfc8eab8d58f39c54e044510e9/comments",
+    "author": {
+      "login": "fmgornick",
+      "id": 24496233,
+      "node_id": "MDQ6VXNlcjI0NDk2MjMz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24496233?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/fmgornick",
+      "html_url": "https://github.com/fmgornick",
+      "followers_url": "https://api.github.com/users/fmgornick/followers",
+      "following_url": "https://api.github.com/users/fmgornick/following{/other_user}",
+      "gists_url": "https://api.github.com/users/fmgornick/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/fmgornick/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/fmgornick/subscriptions",
+      "organizations_url": "https://api.github.com/users/fmgornick/orgs",
+      "repos_url": "https://api.github.com/users/fmgornick/repos",
+      "events_url": "https://api.github.com/users/fmgornick/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/fmgornick/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+        "url": "https://api.github.com/repos/jqlang/jq/commits/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+        "html_url": "https://github.com/jqlang/jq/commit/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579"
+      }
+    ]
+  },
+  {
+    "sha": "0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+    "node_id": "C_kwDOAE3WVdoAKDBiNWFlMzBmMTlkNzFjYTZjYzdiNTg2N2YzYzk4OGM1NzBlY2Q1Nzk",
+    "commit": {
+      "author": {
+        "name": "myaaaaaaaaa",
+        "email": "103326468+myaaaaaaaaa@users.noreply.github.com",
+        "date": "2024-08-20T12:02:24Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2024-08-20T12:02:24Z"
+      },
+      "message": "Implement add/1 (#3144)",
+      "tree": {
+        "sha": "c03bc08638cebca3f99e52a1d60b4ac4e5956817",
+        "url": "https://api.github.com/repos/jqlang/jq/git/trees/c03bc08638cebca3f99e52a1d60b4ac4e5956817"
+      },
+      "url": "https://api.github.com/repos/jqlang/jq/git/commits/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmxIXQCRC1aQ7uu5UhlAAAJOYQAKAMbGO3rI1LfMdSej5TANva\n6s1mSpiGPM6N62S14CaRJhEGr4ZO0gEcbk3MuxaiePvjmlEF4VmOrE0wjpRbnvhs\nVfiJ4mQH941DNwDK07mdjgks33xSsCjGad5ZozI/NeH6o+IsJVkXKwYjTnhyye2T\nuhqtfw0pKYa+vGDRydPEMbt6ScZcpxzPBv8pKxHnXxJMeCw0yaP47voj9y0zSzG4\nbsAdEnReU2TBveOueC3zmTH9Xcq35PPxpyT9+vYQRUXCHj8CAsweUD2hHJdVHMKN\nwclKdowPyLAua2z2NMFCuH1aLOoRwqt+B6USD0sv3Usuj/EorWbFGdrWMdLnNG6x\nxFYgr3s5eKnm76HgX/nqqoiNtCynITTuOrSP/oK78TLmCPiqtQFpH5HNjtjJCy6m\nyyskWHnRsaD1nbFw0W9tUQsZETzlc+x+VlI6TtmR3L6FabuV7j+VRtz5DxRtiHdI\nG43p8mburvWKbVIMix5y3mWA/cVU/t1FA1UGhE+uwN+/6ohGfdMyBhAxDcg6lsn6\nRIGpGA75WassJwpt0y3v7ZDUVmg1prlBDra35JVUEi4zmVoH8YxCaRJbPUXZj0rT\niWrqPjdQ3YPGKBH0lnImMwINVClf2fELcwWlyiylE8J7194lRXABw1YJ0Z9hxO65\nzlv2YsdWDfjpa6nOZWGm\n=M04P\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c03bc08638cebca3f99e52a1d60b4ac4e5956817\nparent 137018d2ae6561a47fe8f118245acd467d7bd88a\nauthor myaaaaaaaaa <103326468+myaaaaaaaaa@users.noreply.github.com> 1724155344 -0400\ncommitter GitHub <noreply@github.com> 1724155344 +0900\n\nImplement add/1 (#3144)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/jqlang/jq/commits/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+    "html_url": "https://github.com/jqlang/jq/commit/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579",
+    "comments_url": "https://api.github.com/repos/jqlang/jq/commits/0b5ae30f19d71ca6cc7b5867f3c988c570ecd579/comments",
+    "author": {
+      "login": "myaaaaaaaaa",
+      "id": 103326468,
+      "node_id": "U_kgDOBiijBA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103326468?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/myaaaaaaaaa",
+      "html_url": "https://github.com/myaaaaaaaaa",
+      "followers_url": "https://api.github.com/users/myaaaaaaaaa/followers",
+      "following_url": "https://api.github.com/users/myaaaaaaaaa/following{/other_user}",
+      "gists_url": "https://api.github.com/users/myaaaaaaaaa/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/myaaaaaaaaa/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/myaaaaaaaaa/subscriptions",
+      "organizations_url": "https://api.github.com/users/myaaaaaaaaa/orgs",
+      "repos_url": "https://api.github.com/users/myaaaaaaaaa/repos",
+      "events_url": "https://api.github.com/users/myaaaaaaaaa/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/myaaaaaaaaa/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "137018d2ae6561a47fe8f118245acd467d7bd88a",
+        "url": "https://api.github.com/repos/jqlang/jq/commits/137018d2ae6561a47fe8f118245acd467d7bd88a",
+        "html_url": "https://github.com/jqlang/jq/commit/137018d2ae6561a47fe8f118245acd467d7bd88a"
+      }
+    ]
+  }
+]
