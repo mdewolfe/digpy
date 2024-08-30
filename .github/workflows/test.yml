@@ -3,14 +3,12 @@ name: digpy tests
 on: [pull_request]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  ci:
     strategy:
-      fail-false: false
       matrix:
-        python-version: ["pypy3.9", "pypy3.10", "3.9", "3.10", "3.11", "3.12"]
-
+        python-version: ["3.12"]
+        os: [ubuntu-22.04, ubuntu-24.04, macos-14, windows-2022]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -20,7 +18,19 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Install Poetry
+        uses: abatilo/actions-poetry@v2
         with:
           poetry-version: 1.8.3
+      - name: Setup a local virtual environment (if no poetry.toml file)
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
+      - uses: actions/cache@v4
+        name: Define a cache for the virtual environment based on the dependencies lock file
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+      - name: Install Dependencies
+        run: poetry install
       - name: Run Tests
         run: poetry run pytest
