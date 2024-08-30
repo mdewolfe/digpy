@@ -35,6 +35,46 @@ def test_source_is_none():
     assert result.value is None
 
 
+def test_source_is_string():
+    # given
+    source = "helloworld"
+
+    # when
+    result: Result = dig(keypath=['hello', 'worls'], source=cast(dict, source))
+
+    # then
+    assert result.found is False
+    assert result.value is None
+
+
+def test_source_is_arbitrary_object():
+    # given
+    class Foo:
+        def __init__(self, prop_1):
+            self.hello = prop_1
+
+    source = Foo(prop_1='world')
+
+    # when
+    result: Result = dig(keypath=['hello'], source=cast(dict, source))
+
+    # then
+    assert result.found is False
+    assert result.value is None
+
+
+def test_source_is_number():
+    # given
+    source = 42
+
+    # when
+    result: Result = dig(keypath=['hello', 'worls'], source=cast(dict, source))
+
+    # then
+    assert result.found is False
+    assert result.value is None
+
+
 def test_simple_dict():
     # given
     source = {"some_key": 42, "other_key": "hello, world!"}

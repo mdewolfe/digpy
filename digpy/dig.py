@@ -18,7 +18,7 @@ def dig(*, keypath: list, source: list|dict) -> Result:
             return Result(found=False)
 
         return dig(keypath=keypath[1:], source=value)
-    except (KeyError, IndexError):
+    except (KeyError, IndexError, TypeError):
         pass
 
     return Result(found=False)
