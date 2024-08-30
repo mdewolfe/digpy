@@ -1,10 +1,10 @@
-from typing import Any, NamedTuple
+from typing import Any, NamedTuple, Optional, Union
 
 class Result(NamedTuple):
     found: bool
-    value: Any = None
+    value: Optional[Any] = None
 
-def dig(*, keypath: list, source: list|dict) -> Result:
+def dig(*, keypath: list, source: Union[list,dict]) -> Result:
     if not keypath or not source:
         return Result(found=False)
 
