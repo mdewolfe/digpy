@@ -1,0 +1,17 @@
+name: Type Check
+on: [pull_request]
+jobs:
+  mypy:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+          architecture: x64
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install MyPy
+        run: pip install mypy
+      - name: Type Check
+        run: mypy digpy/
