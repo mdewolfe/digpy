@@ -1,23 +1,25 @@
 import json
 from typing import cast
+
 import pytest
-from digpy.dig import dig, Result
+
+from digpy.dig import Result, dig
 
 
 def test_empty_path():
-    result: Result = dig(keypath=[], source={"foo":1})
+    result: Result = dig(keypath=[], source={"foo": 1})
     assert result.found is False
     assert result.value is None
 
 
 def test_empty_path_default_value():
-    result: Result = dig(keypath=[], source={"foo":1}, default_value=42)
+    result: Result = dig(keypath=[], source={"foo": 1}, default_value=42)
     assert result.found is False
     assert result.value == 42
 
 
 def test_keypath_is_none():
-    result: Result = dig(keypath=cast(list, None), source={"foo":1})
+    result: Result = dig(keypath=cast(list, None), source={"foo": 1})
     assert result.found is False
     assert result.value is None
 
@@ -33,11 +35,11 @@ def test_source_empty_dict_default_value():
     assert result.found is False
     assert result.value == "fortytwo"
 
+
 def test_source_empty_list():
     result: Result = dig(keypath=["foo"], source=[])
     assert result.found is False
     assert result.value is None
-
 
 
 def test_source_is_none():
@@ -47,7 +49,9 @@ def test_source_is_none():
 
 
 def test_source_is_none_default_value():
-    result: Result = dig(keypath=["foo"], source=cast(dict, None), default_value="forty and two")
+    result: Result = dig(
+        keypath=["foo"], source=cast(dict, None), default_value="forty and two"
+    )
     assert result.found is False
     assert result.value == "forty and two"
 
@@ -57,7 +61,7 @@ def test_source_is_string():
     source = "helloworld"
 
     # when
-    result: Result = dig(keypath=['hello', 'worls'], source=cast(dict, source))
+    result: Result = dig(keypath=["hello", "worls"], source=cast(dict, source))
 
     # then
     assert result.found is False
@@ -70,10 +74,10 @@ def test_source_is_arbitrary_object():
         def __init__(self, prop_1):
             self.hello = prop_1
 
-    source = Foo(prop_1='world')
+    source = Foo(prop_1="world")
 
     # when
-    result: Result = dig(keypath=['hello'], source=cast(dict, source))
+    result: Result = dig(keypath=["hello"], source=cast(dict, source))
 
     # then
     assert result.found is False
@@ -85,7 +89,7 @@ def test_source_is_number():
     source = 42
 
     # when
-    result: Result = dig(keypath=['hello', 'worls'], source=cast(dict, source))
+    result: Result = dig(keypath=["hello", "worls"], source=cast(dict, source))
 
     # then
     assert result.found is False
@@ -106,7 +110,7 @@ def test_simple_dict():
 
 def test_simple_list():
     # given
-    source = [9,8,7]
+    source = [9, 8, 7]
 
     # when
     result: Result = dig(keypath=[1], source=source)
@@ -118,7 +122,7 @@ def test_simple_list():
 
 def test_simple_list_negative_index():
     # given
-    source = [9,8,7]
+    source = [9, 8, 7]
 
     # when
     result: Result = dig(keypath=[-1], source=source)
@@ -154,7 +158,7 @@ def test_key_not_resent_default_value():
 
 def test_index_out_of_range():
     # given
-    source = [9,8,7]
+    source = [9, 8, 7]
 
     # when
     result = dig(keypath=[3], source=source)
@@ -166,7 +170,7 @@ def test_index_out_of_range():
 
 def test_index_out_of_range_default_value():
     # given
-    source = [9,8,7]
+    source = [9, 8, 7]
 
     # when
     result = dig(keypath=[3], source=source, default_value=42)
@@ -190,7 +194,7 @@ def test_valid_none_is_found():
 
 @pytest.fixture
 def sample_json():
-    with open('tests/fixtures/sample.json') as fp:
+    with open("tests/fixtures/sample.json") as fp:
         sample = json.load(fp)
 
     return sample
@@ -198,7 +202,7 @@ def sample_json():
 
 def test_complex_json_array(sample_json):
     # given
-    keypath = [2, 'commit', 'author', 'date']
+    keypath = [2, "commit", "author", "date"]
 
     # when
     result: Result = dig(keypath=keypath, source=sample_json)
@@ -210,7 +214,7 @@ def test_complex_json_array(sample_json):
 
 def test_complex_json_array_key_not_found(sample_json):
     # given
-    keypath = [2, 'commit', 'foo', 'date']
+    keypath = [2, "commit", "foo", "date"]
 
     # when
     result: Result = dig(keypath=keypath, source=sample_json)
@@ -222,11 +226,11 @@ def test_complex_json_array_key_not_found(sample_json):
 
 def test_complex_json_array_key_not_found_default_value(sample_json):
     # given
-    keypath = [2, 'commit', 'foo', 'date']
+    keypath = [2, "commit", "foo", "date"]
 
     # when
     result: Result = dig(keypath=keypath, source=sample_json, default_value=42)
 
     # then
     assert result.found is False
-    assert result.value is 42
+    assert result.value == 42
