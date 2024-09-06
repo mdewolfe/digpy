@@ -13,7 +13,10 @@ We were constantly doing trying to get values nested multiple layers deep in a J
 object. We were constantly wrapping code in `try-except` blocks or chaining `dict.get`
 calls. Coming from Ruby on Rails background, [`Hash.dig` function](https://apidock.com/ruby/v2_5_5/Hash/dig)
 was immensely convenient to avoid the clutter of exception handling and/or sequentially
-calling `dict.get`.
+calling `dict.get`. Another reason, after playing around with Go and Rust, I came
+to appreciate [errors as values](https://www.inngest.com/blog/python-errors-as-values).
+In this case, and my use case, one of `KeyError`, `ÌndexError`, or `TypeError`, are
+reasonable errors to encounter when handling (mostly) arbitrary JSON data.
 
 
 Consider the follwing object:
