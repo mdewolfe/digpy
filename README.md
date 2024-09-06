@@ -53,13 +53,18 @@ If we want the list if subscriptions, we had two options:
     except KeyError:
         return None
     ```
+    But I do not particularly like having exceptions all over the place, especially
+    with my use case. This was cumbersome.
 
 2. Chain `dict.get`
     ```py
     return json.get("customer", {}).get("purchase", {}).get("subscriptions", [])
     ```
+    Similar to the staregy above, with the nesting and repetition, this would clutter
+    the code needlessly when all I want to know if a value is at the end of that
+    keypath.
 
-Constant repetition of this pattern was tedious, and we had multiple projects that
+Constant repetition of these patterns was tedious, and we had multiple projects that
 followed the same pattern, increasing the tedium. Repetitive code is the bane to the
 existence of all programmers.
 
