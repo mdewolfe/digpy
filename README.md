@@ -18,6 +18,9 @@ to appreciate [errors as values](https://www.inngest.com/blog/python-errors-as-v
 In this case, and my use case, one of `KeyError`, `ÌndexError`, or `TypeError`, are
 reasonable errors to encounter when handling (mostly) arbitrary JSON data.
 
+> [!NOTE]
+> True, errors are not really returned, but potential common errors are handled.
+
 
 Consider the follwing object:
 
